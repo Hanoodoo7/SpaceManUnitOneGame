@@ -1,0 +1,120 @@
+// CSS
+
+// // General Styles
+// Set background-color to white
+// Set text color to blue
+// Use "Shadows Into Light" font for title and home buttons
+// Use "Arial" for game UI
+// Bold font for correct letters shown
+
+// // Page Layout
+// Center all content using flexbox/grid
+// Add spacing and padding for layout balance
+
+// // Buttons
+// Blue border
+// White background
+// Rounded corners
+// Change background to light blue on hover
+
+// // Input Boxes
+// Blue border
+// Rounded corners
+
+// // Hangman Drawing
+// Initial state: base and rope visible
+// Body parts (head, body, arms, legs) are hidden by default
+// Reveal body parts one-by-one for each wrong guess
+// Use blue stroke for lines
+
+
+// -------------------------------------------------------------------------------
+
+// HTML 
+
+// // Page 1 - Welcome
+// Display large title: "Hangman" (Shadows Into Light font)
+// Place "Enter" button below title
+// → On click: go to Word Entry page
+
+// // Page 2 - Word Entry
+// Instruction: "Enter a word for others to guess"
+// Input field for full word (hidden while typing)
+// Enter button below
+// → On click: save word and go to Game page
+
+// // Page 3 - Game
+// Top: Hangman drawing (SVG, Canvas, or div structure)
+// Below: Underscore lines for each letter in the word
+// Below: Input box for one character guess
+// "Guess" button to submit letter
+// Box displaying used letters (updates dynamically)
+// Use Arial font
+// Bold correct letters
+
+// // Page 4 - Result
+// If win:
+// Show "You Won!!" message in large text
+// Display celebration GIF
+
+// If lose:
+// Show "You Lose!! womp womp" message
+// Display losing GIF
+
+
+
+//---------------------------------------------------------------------------
+
+//JAVA SCRIPT
+
+// // Global Variables
+// targetWord = ""
+// usedWords = []
+// correctLetters = []
+// errorCount = 0
+// maxErrors = 6
+
+// // PAGE 1 - WELCOME
+// On "Enter" button click:
+// → Redirect to Word Entry Page
+
+// // PAGE 2 - WORD ENTRY
+// On "Enter Word" button click:
+// → Save input as targetWord
+// → Convert to lowercase
+// → Redirect to Game Page
+
+// // PAGE 3 - MAIN GAME LOGIC
+
+// On "Guess" button click:
+
+// Get input letter and convert to lowercase
+
+// Check if letter is in usedWords:
+
+// If yes:
+// → Show message: "Letter is already used"
+// → Exit function
+
+// If no:
+// → Add to usedWords
+
+// Check if letter is in targetWord:
+
+// If yes:
+// → Reveal all positions of the letter on screen
+// → Add to correctLetters
+// → Check if all letters in targetWord are now in correctLetters:
+// → If yes: Redirect to Win Page
+
+// If no:
+// → Increment errorCount
+// → Show next hangman body part
+// → If errorCount == maxErrors:
+// → Redirect to Lose Page
+
+// Update:
+
+// Used letters display
+
+// Current word progress (underscores with revealed letters)
