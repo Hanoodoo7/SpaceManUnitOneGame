@@ -39,3 +39,8 @@ h1 {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+
+#theMan {
+    max-width: 500px;
+}

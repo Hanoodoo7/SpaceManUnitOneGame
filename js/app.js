@@ -13,6 +13,7 @@ const maxMistakes = 7;
 const startButton = document.querySelector('#start');//dom
 const keyboardDiv = document.querySelector('.keyboard');//dom
 const wordDiv = document.querySelector('.word');//dom
+const theMan = document.querySelector('#theMan')
 
 
 
@@ -21,11 +22,14 @@ function getRandomWord() {
   const randomIndex = Math.floor(Math.random() * words.length);
   randomWord = words[randomIndex];
 }
+
 // chooses the random word
 function createRandomWordArr() {
   randomWordArr = randomWord.split('');
 }
 // makes the word an array
+
+
 
 function getLetters() {
   keyboardDiv.innerHTML = "";
@@ -40,6 +44,7 @@ function getLetters() {
     });
 
     keyboardDiv.appendChild(btn);
+    theMan.setAttribute('src' , '/Photos/1.png')
   });
 }
 
@@ -60,7 +65,30 @@ function checkLetter(letter, btn) {
   btn.disabled = true;
 
   if (!isCorrect) {
-    mistakes++;
+    mistakes++
+       if(mistakes === 1){
+        theMan.setAttribute ('src' , 'Photos/2.png')
+       }
+       else if (mistakes === 2){
+        theMan.setAttribute ('src' , 'Photos/3.png')
+       }
+        else if (mistakes === 3){
+        theMan.setAttribute ('src' , 'Photos/4.png')
+       }
+        else if (mistakes === 4){
+        theMan.setAttribute ('src' , 'Photos/5.png')
+       }
+        else if (mistakes === 5){
+        theMan.setAttribute ('src' , 'Photos/6.png')
+       }
+        else if (mistakes === 6){
+        theMan.setAttribute ('src' , 'Photos/7.png')
+       }
+        else if (mistakes === 7){
+        theMan.setAttribute ('src' , 'Photos/8.png')
+       }
+
+
 // adds a mistake to the game to track
     if (mistakes >= maxMistakes) {
       wordDiv.textContent = `u loose womp womp🤣. The word was: ${randomWord}`;
