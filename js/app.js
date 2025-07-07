@@ -8,16 +8,30 @@ let randomWordArr;
 let userChoiceArr;
 let mistakes = 0;
 const maxMistakes = 7;
+let isGameStarted = false
 
 // UI elements
 const startButton = document.querySelector('#start');//dom
 const keyboardDiv = document.querySelector('.keyboard');//dom
 const wordDiv = document.querySelector('.word');//dom
 const theMan = document.querySelector('#theMan')
+// const resetButton = document.querySelector('#reset')
 
 
 
 // Functions
+
+function isItOn(){
+    console.log('running')
+    if(isGameStarted === true){
+        startButton.textContent = "reset"
+    }
+    else{
+        startButton.textContent = "play"
+    }
+}
+isItOn()
+
 function getRandomWord() {
   const randomIndex = Math.floor(Math.random() * words.length);
   randomWord = words[randomIndex];
@@ -45,8 +59,17 @@ function getLetters() {
 
     keyboardDiv.appendChild(btn);
     theMan.setAttribute('src' , '/Photos/1.png')
+    // resetButton.appendChild()
   });
+  
 }
+
+function hideButtons() {
+    resetButton.innerHTML = "";
+    resetButton.appendChild()
+  };
+  
+
 
 // takes the keyboard calss and makes all the letters a button
 
@@ -122,6 +145,8 @@ function disableAllLetters() {
 
 // Start game button
 startButton.addEventListener('click', () => {
+isGameStarted = !isGameStarted
+  isItOn();
   getRandomWord();
   createRandomWordArr();
   userChoiceArr = randomWordArr.map(() => "_");
@@ -129,5 +154,14 @@ startButton.addEventListener('click', () => {
   getLetters();
   mistakes = 0;
 });
+
+// resetButton.addEventListener('click', () => {
+//   getRandomWord();
+//   createRandomWordArr();
+//   userChoiceArr = randomWordArr.map(() => "_");
+//   updateWordDisplay();
+//   getLetters();
+//   mistakes = 0;
+// });
 
 // this is the start game and reset button 

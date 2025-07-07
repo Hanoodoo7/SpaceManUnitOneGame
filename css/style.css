@@ -1,19 +1,22 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #0015ff;
   padding: 30px;
 }
 
 h1 {
-  font-size: 2em;
+  font-family: "Shadows Into Light", cursive; 
+  font-size: 60px;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .word {
-  font-size: 2rem;
+  font-size: 40px;
   margin: 20px 0;
   letter-spacing: 10px;
+  color: #ffffff;
 }
 
 .keyboard {
@@ -23,10 +26,11 @@ h1 {
 .letter-btn {
   margin: 5px;
   padding: 10px 14px;
-  font-size: 16px;
+  font-size: 27px;
   cursor: pointer;
-  background-color: #ffffff;
-  border: 1px solid #aaa;
+  color: #ffffff;
+  background-color: #0015ff;
+  border: 1px solid #0015ff;
   border-radius: 5px;
   transition: background-color 0.2s ease;
 }
@@ -42,5 +46,8 @@ h1 {
 
 
 #theMan {
+    min-width: 500px;
     max-width: 500px;
+    max-height: 400px;
+    min-height: 400px;
 }
