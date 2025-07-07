@@ -1,5 +1,23 @@
 // State variables
-const words = ['hellos', 'world', 'dogs', 'cat'];
+const words = ['byzz', 'riri', "ant", "antelope", "ape", "armadillo", "baboon", "badger", "bat", "bear", "beaver", "bee", "beetle", "bird", "bison",
+  "boar", "bobcat", "buffalo", "bull", "butterfly", "camel", "canary", "capybara", "carp", "cat", "caterpillar", "catfish",
+  "chameleon", "cheetah", "chicken", "chimpanzee", "chinchilla", "chipmunk", "clam", "clownfish", "cobra", "cockroach",
+  "cod", "cougar", "cow", "coyote", "crab", "crane", "cricket", "crocodile", "crow", "deer", "dingo", "dog", "dolphin",
+  "donkey", "dove", "dragonfly", "duck", "eagle", "earthworm", "eel", "elephant", "elk", "emu", "falcon", "ferret",
+  "finch", "firefly", "fish", "flamingo", "flea", "fly", "fox", "frog", "gazelle", "gecko", "gerbil", "giraffe", "gnat",
+  "goat", "goldfish", "goose", "gorilla", "grasshopper", "guinea pig", "gull", "hamster", "hare", "hawk", "hedgehog",
+  "heron", "hippopotamus", "hornet", "horse", "hummingbird", "hyena", "ibis", "iguana", "jackal", "jaguar", "jellyfish",
+  "kangaroo", "kingfisher", "kiwi", "koala", "komodo dragon", "ladybug", "lamb", "lemur", "leopard", "lion", "lizard",
+  "llama", "lobster", "locust", "lynx", "macaw", "magpie", "mallard", "manatee", "mandrill", "manta ray", "marmoset",
+  "marmot", "meerkat", "millipede", "mole", "monkey", "moose", "mosquito", "moth", "mouse", "mule", "narwhal", "newt",
+  "nightingale", "octopus", "okapi", "opossum", "orangutan", "orca", "ostrich", "otter", "owl", "ox", "oyster", "panda",
+  "panther", "parrot", "peacock", "pelican", "penguin", "pheasant", "pig", "pigeon", "platypus", "polar bear",
+  "pony", "porcupine", "possum", "prairie dog", "prawn", "puffin", "puma", "puppy", "python", "quail", "rabbit",
+  "raccoon", "rat", "raven", "red panda", "reindeer", "rhino", "robin", "rooster", "salamander", "salmon", "scorpion",
+  "seagull", "seal", "shark", "sheep", "shrew", "shrimp", "skunk", "sloth", "snail", "snake", "sparrow", "spider",
+  "squid", "squirrel", "starfish", "stingray", "stork", "swan", "tapir", "termite", "tiger", "toad", "tortoise",
+  "toucan", "trout", "tuna", "turkey", "turtle", "vulture", "wallaby", "walrus", "wasp", "weasel", "whale", "whippet",
+  "wild boar", "wildcat", "wolf", "wolverine", "wombat", "woodpecker", "worm", "yak", "zebra"];
 //words avalable in the game 
 const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m","n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // letters that go in to the keyboard
